@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+.youtube {
+  .sub-visual {
+    background: url(../img/img2.jpg);
+  }
+  
+  .inner {
+
+    #vidGallery {
+      width: 100%;
+
+      &::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+
+      article {
+        float: left;
+        width: 380px;
+        border-bottom: 1px solid #eee;
+        box-sizing: border-box;
+        margin-right: 20px;
+        padding: 30px 30px 100px;
+        position: relative;
+    
+        &:nth-child(3n) {
+          margin-right: 0;
+        }
+
+        &::after {
+          content: "";
+          display: block;
+          clear: both;
+        }
+    
+        .pic {
+          display: block;
+          width: 100%;
+          height: 180px;
+          background-size: cover;
+          background-position: center;
+          margin-bottom: 20px;
+        }
+
+        .con {
+          box-sizing: border-box;
+          padding-left: 20px;
+
+          &::before {
+            content: '';
+            display: block;
+            width: 20px;
+            height: 2px;
+            background: rgba(44, 14, 124, 1);
+            margin-bottom: 20px;
+          }
+         
+          h2 {
+            font: bold 13px/1 "Lato";
+            color: #1c4662;
+            letter-spacing: 1.1px;
+            margin-bottom: 20px;
+          }
+          p {
+            font: 11px/1 "Lato";
+            color: rgba(28, 70, 98, 0.8);
+            letter-spacing: 1.1px;
+            margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}
